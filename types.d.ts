@@ -1819,3 +1819,7 @@ declare class BigNumber implements BigNumber.Instance {
 }
 
 declare function BigNumber(n: BigNumber.Value, base?: number): BigNumber;
+
+// Note: By exporting here, we convert ambient declarations to module exports,
+// preventing automatic inclusion in the global TypeScript namespace.
+export { BigNumber };
